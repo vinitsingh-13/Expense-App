@@ -1,0 +1,122 @@
+
+:root{
+    --margin : 2rem 1rem;
+    --bg-color :#ffffff8e;
+    --shadow: 5px 2px 8px rgb(201, 198, 198);
+}
+@font-face {
+    font-family: 'Euclid Circular';
+    src: url('/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Light.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(197, 192, 192, 0.336);
+    font-family: 'Euclid Circular';
+}
+.app-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    background-color:var(--bg-color);
+    box-shadow:  var(--shadow) ;
+   
+
+}
+.head{
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: #713ABE;
+    font-weight: 600;
+}
+
+.login-details{
+    position: absolute;
+    height: 21rem;
+    width: 41rem ;
+    background-color: var(--bg-color);
+    box-shadow: var(--shadow);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    align-items: center;
+}
+.expense-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem 1rem ;
+    align-items: center;
+    margin-top: 2rem;
+    
+
+}.close-popup{
+    text-align: center;
+    color: red;
+    display: none;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.login-form label{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.login-form  div{
+    margin: 2rem 0 0 1rem;
+
+}
+.login-form input{
+    height: 2.1rem;
+    text-align: center;
+    border-radius: .3rem ;
+    border: 1px solid gray;
+    font-size: 1rem;
+}
+.login-form div:nth-child(3){
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.login{
+    font-weight: 500;
+    padding: .9rem 1.2rem;
+    /* margin: .4rem; */
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-style: none;
+    background-color:  #5B0888;
+    border-radius: .3rem;
+    color: white;
+    text-decoration: none;
+
+}
+@media screen and (min-width:320px) and (max-width:768px){
+    .login-details{
+        width: 98vw;
+    }
+    .login-form div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .login-form label{
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+    .login-form input{
+        height: 2.5rem;
+    }
+}

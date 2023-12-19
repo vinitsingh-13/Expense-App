@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="./images/login.png" type="image/x-icon">
+    <script defer src="login.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="app-heading">
+            <h1 class="head">Extremo.io</h1>
+          </div>
+  
+        </nav>
+      </header>
+      <section class="login-details">
+        <form action="" required >
+          <div class="login-form">
+            <h3 class="close-popup">Please fill the values completely</h3>
+            <div>
+              <label for="login"> Enter your Name :</label>
+              <input type="text" placeholder="Enter your name" id="username" required="true" >
+            </div>
+            <div>
+              <label for="login"> Monthly Amount :</label>
+              <input type="number" min="1" placeholder="Enter monthly amount" id="monamount" required="true" >
+            </div>
+            <div>
+               <button class="login hover" type="submit"  >Login</button>
+        </div>
+        </div>
+        </form>
+      </section>
+</body>
+</html>

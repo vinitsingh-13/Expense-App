@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extremo : Track your expense</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="shortcut icon" href="./images/expenses.png" type="image/x-icon">
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="app-heading">
+          <h1 class="head">Extremo.io</h1>
+          <img src="./images/menu.png" alt="Hamburger"  class="hamburger-img">
+          <div>
+            <img src="./images/user.png" alt="Profile" class="profile-img">
+            <h3 class="profile-name">Hey, <span class="profile-span"></span></h3>
+
+          </div>
+        </div>
+
+      </nav>
+    </header>
+    <main>
+      <section class="main-content">
+        <div class="dashboard ">
+          <ul>
+            <div class="links">
+              <img src="./images/home.png" alt="">
+              <li class="dash-links" id="home">Home</li>
+            </div>
+            <div class="links">
+              <img src="./images/banknote.png" alt="">
+              <li class="dash-links" id="bill">Bill and Payments</li>
+            </div>
+            <div class="links">
+              <img src="./images/gear.png" alt="">
+              <li class="dash-links" id="setting">Settings</li>
+            </div>
+            <div class="links">
+              <img src="./images/information.png" alt="">
+              <li class="dash-links" id="help">Get Help</li>
+            </div>
+          </ul>
+          <div class="buttons">
+            <!-- <button class="btn">Sign Out</button> -->
+            <button class="btn reset hover">Sign out</button>
+          </div>
+        </div>
+        <section class="amount-dash"> 
+          <div class="amount">
+            <div>
+              <img src="./images/money-bag.png" alt="Budget" class="budget-img">
+            <h3 class="head-3">Monthly Budget</h3>
+          </div>
+
+          </div>
+            <p class="amo-para">$ <span class="amount-para"></span></p>
+        </section>
+        <section class="amount-dash">
+               <div class="saving-container">
+                  <img src="./images/piggy-bank.png" alt="piggy-bank" class="saving-img">
+                 <h3 class="head-3">Total Savings</h3>
+               </div>
+            <p id="saving-para">$ <span class="saving-para"></span>
+            </p>
+        </section>
+        <section class="details">
+          <form action="" required >
+            <div class="expense-form">
+              <h3 class="close-popup">Please fill the values completely</h3>
+              <div>
+                <label for="Expense"> Expense Names :</label>
+                <input type="text" placeholder="Enter expense name" id="name" required="true" >
+              </div>
+              <div>
+                <label for="Expense"> Expense Amount :</label>
+                <input type="number" min="1" placeholder="Enter expense amount" id="expamount" required="true" >
+              </div>
+              <div>
+                <button class="add-expense hover">Add Expense</button>
+          </div>
+          </div>
+
+          </form>
+        </section>
+        <section class="expense-dash">
+          <h2 class="trans-his">Your Transactions History</h2>
+          <div class="dash-content">
+            <div class="dash-name">
+            </div>
+            <div class="dash-price"></div>
+          </div>
+          
+          <div class="expense-container">
+            <!-- <h3 class="new-head">Money Transactions </h3> -->
+            <h3 class="head-3 expense-head">Total Expense</h3>
+           <p id="exp-para"> </p> 
+            <!-- <button class="add-mon hover">Add New</button> -->
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
